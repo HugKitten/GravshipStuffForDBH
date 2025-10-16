@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BasedWaterPump" DBHLite="true">
+        <defName>Kitty_AtmosphericWaterGenerator</defName>
+        <label>atmospheric water station</label>
+        <description>Extract water from atmosphere. Pumping capacity: 600 L/day.</description>
+        <graphicData>
+            <texPath>TEFNUT/Things/Building/Water/GravshipWaterGenerator</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2.3,2.3)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <tickerType>Never</tickerType>
+        <size>(2,2)</size>
+        <costList>
+            <Steel>125</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToBuild>30000</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>500</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericWaterStation">
+                <Capacity>600</Capacity>
+            </li>
+            <!--<li Class="DubsBadHygiene.CompProperties_WaterPumpingStation">
+                <Capacity>10000</Capacity>
+            </li>-->
+        </comps>
+        <researchPrerequisites>
+            <li>AtmosphericWaterGeneration</li>
+        </researchPrerequisites>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <castEdgeShadows>True</castEdgeShadows>
+    </ThingDef>
+
+    <ThingDef ParentName="BasedWaterTower" DBHLite="true">
+        <defName>Kitty_CompressedWaterTank</defName>
+        <label>compressed water tank</label>
+        <description>Stores water for use by plumbed fixtures. The water must be drained if it becomes contaminated. Capacity when powered: 12000 Capacity when unpowered: 4000.</description>
+        <graphicData>
+            <texPath>TEFNUT/Things/Building/Water/GravshipWaterTank</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.5,2)</drawSize>
+        </graphicData>
+        <size>(1,2)</size>
+        <costList>
+            <Steel>125</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>200</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_CompressedWaterStorage">
+                <WaterStorageCap>12000</WaterStorageCap>
+                <UnpoweredWaterStorageCap>4000</UnpoweredWaterStorageCap>
+            </li>
+        </comps>
+        <rotatable>true</rotatable>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <statBases>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToBuild>2200</WorkToBuild>
+            <Flammability>0.0</Flammability>
+        </statBases>
+        <researchPrerequisites>
+            <li>AdvanceWaterStorage</li>
+        </researchPrerequisites>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    </ThingDef>
+</Defs>

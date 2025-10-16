@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>kitty.gravshipstufffordubsBadhygiene</packageId>
+    <name>Gravship Stuff for DBH</name>
+    <author>ocarina0001, tefnut, sarah</author>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description>Adds a passive water generator and a compressed water tank that can be built in gravships.</description>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Odyssey</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>Ludeon.RimWorld.Anomaly</li>
+        <li>dubwise.dubsbadhygiene</li>
+    </loadAfter>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+        <li>
+            <packageId>ludeon.rimworld.odyssey</packageId>
+            <displayName>Odyssey [Official DLC]</displayName>
+            <steamWorkshopUrl>https://store.steampowered.com/app/3022790/RimWorld__Odyssey/</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>dubwise.dubsbadhygiene</packageId>
+            <displayName>Dubs Bad Hygiene</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=836308268</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+</ModMetaData>
