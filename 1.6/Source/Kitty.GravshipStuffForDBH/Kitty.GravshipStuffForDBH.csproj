@@ -112,6 +112,8 @@
       <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
     </Compile>
     <Compile Include="HarmonyPatches\Patcher.cs" />
+    <Compile Include="HarmonyPatches\TowerContaminationIncident_Patch.cs" />
+    <Compile Include="HarmonyPatches\WaterStorage_Patch.cs" />
     <Compile Include="PatchCard.cs">
       <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
     </Compile>
