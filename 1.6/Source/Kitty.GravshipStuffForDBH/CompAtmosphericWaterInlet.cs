@@ -1,6 +1,4 @@
 using System;
-using System.Text;
-using DubsBadHygiene;
 using GravshipStuffForDubsBadHygiene.HarmonyPatches;
 using RimWorld;
 using Verse;

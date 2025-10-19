@@ -1,7 +1,3 @@
-using DubsBadHygiene;
-using UnityEngine;
-using Verse;
-
 namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
 {
     /*

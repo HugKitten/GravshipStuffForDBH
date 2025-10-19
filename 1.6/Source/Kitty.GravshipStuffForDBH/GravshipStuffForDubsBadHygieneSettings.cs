@@ -1,15 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using DubsBadHygiene;
 using Verse;
 
-namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
+namespace GravshipStuffForDubsBadHygiene
 {
     public class GravshipStuffForDubsBadHygieneSettings : ModSettings
     {
         public bool atmosphericIsTreated = true;
         public float atmosphericYieldPowered = 600F;
+        // ReSharper disable once RedundantDefaultMemberInitializer
         public float atmosphericYieldUnpowered = 0F;
         public float atmosphericPowerConsumption = 500F;
 
@@ -20,15 +17,11 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
         public bool patchContaminationEvent = true;
         public bool patchWaterTowers = true;
 
-        public GravshipStuffForDubsBadHygieneSettings()
-        {
-            
-        }
-
         public override void ExposeData()
         {   
             Scribe_Values.Look(ref atmosphericIsTreated, "AtmosphericIsTreated", true);
             Scribe_Values.Look(ref atmosphericYieldPowered, "AtmosphericYieldPowered", 600F);
+            // ReSharper disable once RedundantArgumentDefaultValue
             Scribe_Values.Look(ref atmosphericYieldUnpowered, "AtmosphericYieldUnpowered", 0F);
             Scribe_Values.Look(ref atmosphericPowerConsumption, "AtmosphericPowerConsumption", 500F);
             

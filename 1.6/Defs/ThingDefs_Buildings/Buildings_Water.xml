@@ -62,10 +62,7 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_CompressedWaterStorage">
-                <WaterStorageCap>12000</WaterStorageCap>
-                <UnpoweredWaterStorageCap>4000</UnpoweredWaterStorageCap>
-            </li>
+            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_CompressedWaterStorage"/>
         </comps>
         <rotatable>true</rotatable>
         <defaultPlacingRot>South</defaultPlacingRot>
