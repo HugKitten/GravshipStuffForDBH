@@ -8,14 +8,11 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
         //private Vector2 scrollPosition = Vector2.zero;
         
         public GravshipStuffForDubsBadHygieneSettings Settings { get; }
-        public Patcher Patcher { get; }
         
         public GravshipStuffForDubsBadHygieneMod(ModContentPack content) 
             : base(content)
         {
             Settings = this.GetSettings<GravshipStuffForDubsBadHygieneSettings>();
-            Patcher = new Patcher(content, Settings);
-            Patcher.PatchAll();
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

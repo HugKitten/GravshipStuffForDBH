@@ -13,10 +13,11 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
     {
         private static readonly Type TowerContaminationIncidentType =
             AccessTools.TypeByName("DubsBadHygiene.IncidentWorker_TowerContamination");
-        private static readonly Type PlumbingNetType = AccessTools.TypeByName("DubsBadHygiene.PlumbingNet");
-        private static readonly MethodInfo HasFilterMethod = AccessTools.PropertyGetter(PlumbingNetType, "HasFilter");
+
+        private static readonly Type PlumbingNetType = typeof(PlumbingNet);
+        private static readonly MethodInfo HasFilterMethod = AccessTools.PropertyGetter(PlumbingNetType, nameof(PlumbingNet.HasFilter));
         private static readonly CodeInstruction EnablesContaminationIncidentCall = CodeInstruction.Call(typeof(PlumbingNetHelper),
-            nameof(PlumbingNetHelper.EnablesContaminationIncident));
+            nameof(PlumbingNetHelper.EnablesContaminationIncident), new []{PlumbingNetType});
         
         static IEnumerable<MethodBase> TargetMethods()
         {

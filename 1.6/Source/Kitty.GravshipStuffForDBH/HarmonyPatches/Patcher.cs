@@ -8,24 +8,20 @@ using Verse;
 
 namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
 {
-    public class Patcher
+    [StaticConstructorOnStartup]
+    public static class Patcher
     {
-        private readonly GravshipStuffForDubsBadHygieneSettings _settings;
-        private readonly Harmony _harmony;
-
-        public Patcher(ModContentPack content, GravshipStuffForDubsBadHygieneSettings settings)
+        static Patcher()
         {
-            this._settings = settings;
-            this._harmony = new Harmony(content.PackageId);
-        }
-        
-        public void PatchAll()
-        {
-            if (this._settings.patchContaminationEvent)
-                this._harmony.PatchCategory("TowerContaminationIncident");
+            var mod = LoadedModManager.GetMod<GravshipStuffForDubsBadHygieneMod>();
+            var settings = mod.GetSettings<GravshipStuffForDubsBadHygieneSettings>();
+            var harmony = new Harmony(mod.Content.PackageId);
+            
+            if (settings.patchContaminationEvent)
+                harmony.PatchCategory("TowerContaminationIncident");
 
-            if (this._settings.patchWaterTowers) 
-                this._harmony.PatchCategory("WaterStorage");
+            if (settings.patchWaterTowers) 
+                harmony.PatchCategory("WaterStorage");
         }
     }
 } 

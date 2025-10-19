@@ -10,12 +10,11 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
     [HarmonyPatch]
     public class WaterStorage_Patch
     {
-        private static readonly Type WaterStorageType =
-            AccessTools.TypeByName("DubsBadHygiene.CompWaterStorage");
-        private static readonly Type PlumbingNetType = AccessTools.TypeByName("DubsBadHygiene.PlumbingNet");
-        private static readonly MethodInfo HasFilterMethod = AccessTools.PropertyGetter(PlumbingNetType, "HasFilter");
+        private static readonly Type WaterStorageType = typeof(CompWaterStorage);
+        private static readonly Type PlumbingNetType =typeof(PlumbingNet);
+        private static readonly MethodInfo HasFilterMethod = AccessTools.PropertyGetter(PlumbingNetType, nameof(PlumbingNet.HasFilter));
         private static readonly CodeInstruction EnablesContaminationIncidentCall = CodeInstruction.Call(typeof(PlumbingNetHelper),
-            nameof(PlumbingNetHelper.IsTreated));
+            nameof(PlumbingNetHelper.IsTreated), new []{PlumbingNetType});
         
         static IEnumerable<MethodBase> TargetMethods()
         {
