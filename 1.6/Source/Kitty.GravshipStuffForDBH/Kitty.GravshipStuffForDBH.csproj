@@ -37,11 +37,11 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\.var\app\com.valvesoftware.Steam\.local\share\Steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="BadHygiene">
-      <HintPath>..\..\..\..\..\.var\app\com.valvesoftware.Steam\.local\share\Steam\steamapps\workshop\content\294100\836308268\1.6\Assemblies\BadHygiene.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\836308268\1.6\Assemblies\BadHygiene.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Cecil, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
@@ -86,7 +86,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\.var\app\com.valvesoftware.Steam\.local\share\Steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -112,6 +112,8 @@
       <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
     </Compile>
     <Compile Include="HarmonyPatches\Patcher.cs" />
+    <Compile Include="HarmonyPatches\TowerContaminationIncident_Patch.cs" />
+    <Compile Include="HarmonyPatches\WaterStorage_Patch.cs" />
     <Compile Include="PatchCard.cs">
       <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
     </Compile>

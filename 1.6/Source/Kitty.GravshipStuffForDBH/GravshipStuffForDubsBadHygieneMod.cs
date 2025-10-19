@@ -14,8 +14,7 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
             : base(content)
         {
             Settings = this.GetSettings<GravshipStuffForDubsBadHygieneSettings>();
-            Patcher = new Patcher(content);
-
+            Patcher = new Patcher(content, Settings);
             Patcher.PatchAll();
         }
 
@@ -65,5 +64,7 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }
+
+        public override string SettingsCategory() => "Gravship Stuff for DBH";
     }
 }

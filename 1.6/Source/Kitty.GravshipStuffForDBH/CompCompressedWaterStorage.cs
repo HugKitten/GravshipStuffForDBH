@@ -19,7 +19,7 @@ namespace GravshipStuffForDubsBadHygiene
         
         /// <summary>
         /// How much water that can be stored.
-        /// Dubs if you see this, please include a virtual WaterStorageCap <3
+        /// Dubs if you see this, please include a virtual WaterStorageCap ❤️
         /// </summary>
         public virtual float WaterStorageCap => this.WorkingNow ? this.PoweredWaterStorageCap : this.UnpoweredWaterStorageCap;
         public new CompProperties_CompressedWaterStorage Props => (CompProperties_CompressedWaterStorage) this.props ?? throw new InvalidOperationException("Props not set");

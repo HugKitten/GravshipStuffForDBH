@@ -43,7 +43,7 @@ namespace GravshipStuffForDubsBadHygiene
         
         /// <summary>
         /// This is overriden to use virtual WaterCapacity since base method uses protected non-virtual field instead of GetGroundWaterCapacity
-        /// Dubs if you see this, please update your code so that a virtual accessor is used here <3
+        /// Dubs if you see this, please update your code so that a virtual accessor is used here ️
         /// </summary>
         public override string CompInspectStringExtra()
         {
