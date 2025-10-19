@@ -29,12 +29,8 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericWaterStation">
-                <Capacity>600</Capacity>
-            </li>
-            <!--<li Class="DubsBadHygiene.CompProperties_WaterPumpingStation">
-                <Capacity>10000</Capacity>
-            </li>-->
+            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericInlet"/>
+            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericPumpingStation"/>
         </comps>
         <researchPrerequisites>
             <li>AtmosphericWaterGeneration</li>

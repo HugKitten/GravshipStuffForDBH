@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4560f556-b06c-4235-8bd6-b6904c830e73" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompAtmosphericPumpingStation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompAtmosphericWaterInlet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompProperties_AtmosphericInlet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompProperties_TreatedWaterInlet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompTreatedWaterInlet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/GravshipStuffForDubsBadHygieneMod.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/GravshipStuffForDubsBadHygieneSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/HarmonyPatches/Patcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/Kitty.GravshipStuffForDBH.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/PatchCard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/PlumbingNetHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/obj/Debug/GravshipStuffForDubsBadHygiene.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/obj/Debug/TefnutGravshipWaterSystems.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assemblies/GravshipStuffForDubsBadHygiene.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assemblies/GravshipStuffForDubsBadHygiene.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assemblies/GravshipStuffForDubsBadHygiene.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assemblies/GravshipStuffForDubsBadHygiene.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Defs/ThingDefs_Buildings/Buildings_Water.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Defs/ThingDefs_Buildings/Buildings_Water.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Languages/English/Keyed/TefnutGravshipWaterSystems.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Languages/English/Keyed/TefnutGravshipWaterSystems.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.CompProperties_AtmosphericWaterInlet.cs.kate-swp" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/.CompProperties_AtmosphericWaterInlet.cs.kate-swp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompAtmosphericWaterStation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompCompressedWaterStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompCompressedWaterStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompProperties_AtmosphericWaterStation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompProperties_AtmosphericPumpingStation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompWaterStorage_CompTick_Patch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompressedWaterStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompProperties_CompressedWaterStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExternalWaterInlet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TefnutGravshipWaterSystems.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TefnutGravshipWaterSystems.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/TefnutGravshipWaterSystems.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TefnutGravshipWaterSystems.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/TefnutGravshipWaterSystems.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/GravshipStuffForDubsBadHygiene.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/GravshipStuffForDubsBadHygiene.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/obj/Debug/GravshipStuffForDubsBadHygiene.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/TefnutGravshipWaterSystems.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/obj/Debug/TefnutGravshipWaterSystems.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/TefnutGravshipWaterSystems.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/TefnutGravshipWaterSystems.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/obj/Debug/TefnutGravshipWaterSystems.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/.signature.p7s" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/.signature.p7s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/HarmonyLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/HarmonyLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/Lib.Harmony.2.4.1.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/Lib.Harmony.2.4.1.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net35/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net35/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net35/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net35/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net35/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net35/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net452/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net452/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net452/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net452/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net452/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net452/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net472/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net472/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net472/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net472/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net472/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net472/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net48/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net48/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net48/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net48/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net48/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net48/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net5.0/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net5.0/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net5.0/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net5.0/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net5.0/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net5.0/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net6.0/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net6.0/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net6.0/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net6.0/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net6.0/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net6.0/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net7.0/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net7.0/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net7.0/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net7.0/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net7.0/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net7.0/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net8.0/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net8.0/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net8.0/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net8.0/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net8.0/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net8.0/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net9.0/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net9.0/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net9.0/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net9.0/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/net9.0/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/net9.0/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.0/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.0/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.0/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.0/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.0/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.0/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.1/0Harmony.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.1/0Harmony.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.1/0Harmony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.1/0Harmony.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.1/0Harmony.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/netcoreapp3.1/0Harmony.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Lib.Harmony.2.4.1/lib/netstandard2.0/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Lib.Harmony.2.4.1/lib/netstandard2.0/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/.signature.p7s" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/.signature.p7s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/Mono.Cecil.0.11.6.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/Mono.Cecil.0.11.6.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Mdb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Mdb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Mdb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Mdb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Pdb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Pdb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Pdb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Pdb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Rocks.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Rocks.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Rocks.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.Rocks.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/net40/Mono.Cecil.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Mdb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Mdb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Mdb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Mdb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Pdb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Pdb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Pdb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Pdb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Rocks.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Rocks.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Rocks.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.Rocks.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/Mono.Cecil.0.11.6/lib/netstandard2.0/Mono.Cecil.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/.signature.p7s" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/.signature.p7s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/MonoMod.Backports.1.1.2.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/MonoMod.Backports.1.1.2.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net35/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net35/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net35/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net35/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net35/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net35/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net452/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net452/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net452/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net452/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net452/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net452/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net5.0/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net5.0/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net5.0/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net5.0/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net5.0/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net5.0/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net6.0/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net6.0/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net6.0/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net6.0/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net6.0/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net6.0/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net7.0/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net7.0/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net7.0/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net7.0/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net7.0/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net7.0/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net8.0/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net8.0/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net8.0/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net8.0/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/net8.0/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/net8.0/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netcoreapp2.1/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netcoreapp2.1/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netcoreapp2.1/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netcoreapp2.1/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netcoreapp2.1/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netcoreapp2.1/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.0/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.0/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.0/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.0/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.0/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.0/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.1/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.1/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.1/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.1/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.1/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netcoreapp3.1/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netstandard2.0/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netstandard2.0/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netstandard2.0/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netstandard2.0/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netstandard2.0/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netstandard2.0/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netstandard2.1/MonoMod.Backports.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netstandard2.1/MonoMod.Backports.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netstandard2.1/MonoMod.Backports.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netstandard2.1/MonoMod.Backports.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Backports.1.1.2/lib/netstandard2.1/MonoMod.Backports.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Backports.1.1.2/lib/netstandard2.1/MonoMod.Backports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/.signature.p7s" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/.signature.p7s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/MonoMod.Core.1.3.0.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/MonoMod.Core.1.3.0.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/buildTransitive/MonoMod.CheckTargetRuntime.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/buildTransitive/MonoMod.CheckTargetRuntime.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/buildTransitive/MonoMod.Core.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/buildTransitive/MonoMod.Core.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Iced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Iced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Iced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Iced.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Iced.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net35/MonoMod.Iced.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Iced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Iced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Iced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Iced.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Iced.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net452/MonoMod.Iced.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Iced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Iced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Iced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Iced.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Iced.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net5.0/MonoMod.Iced.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Iced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Iced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Iced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Iced.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Iced.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net6.0/MonoMod.Iced.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Iced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Iced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Iced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Iced.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Iced.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net7.0/MonoMod.Iced.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Iced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Iced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Iced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Iced.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Iced.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net8.0/MonoMod.Iced.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Iced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Iced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Iced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Iced.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Iced.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/net9.0/MonoMod.Iced.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Iced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Iced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Iced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Iced.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Iced.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/lib/netstandard2.0/MonoMod.Iced.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Core.1.3.0/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Core.1.3.0/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/.signature.p7s" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/.signature.p7s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/MonoMod.ILHelpers.1.1.0.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/MonoMod.ILHelpers.1.1.0.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net35/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net35/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net35/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net35/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net452/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net452/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net452/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net452/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net5.0/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net5.0/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net5.0/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net5.0/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net6.0/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net6.0/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net6.0/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net6.0/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net7.0/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net7.0/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net7.0/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net7.0/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net8.0/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net8.0/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/net8.0/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/net8.0/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp2.1/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp2.1/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp2.1/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp2.1/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp3.0/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp3.0/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp3.0/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp3.0/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp3.1/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp3.1/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp3.1/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netcoreapp3.1/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netstandard2.0/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netstandard2.0/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netstandard2.0/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netstandard2.0/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netstandard2.1/MonoMod.ILHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netstandard2.1/MonoMod.ILHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.ILHelpers.1.1.0/lib/netstandard2.1/MonoMod.ILHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.ILHelpers.1.1.0/lib/netstandard2.1/MonoMod.ILHelpers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/.signature.p7s" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/.signature.p7s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/MonoMod.Utils.25.0.8.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/MonoMod.Utils.25.0.8.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net35/MonoMod.Utils.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net35/MonoMod.Utils.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net35/MonoMod.Utils.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net35/MonoMod.Utils.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net35/MonoMod.Utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net35/MonoMod.Utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net452/MonoMod.Utils.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net452/MonoMod.Utils.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net452/MonoMod.Utils.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net452/MonoMod.Utils.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net452/MonoMod.Utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net452/MonoMod.Utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net5.0/MonoMod.Utils.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net5.0/MonoMod.Utils.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net5.0/MonoMod.Utils.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net5.0/MonoMod.Utils.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net5.0/MonoMod.Utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net5.0/MonoMod.Utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net6.0/MonoMod.Utils.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net6.0/MonoMod.Utils.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net6.0/MonoMod.Utils.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net6.0/MonoMod.Utils.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net6.0/MonoMod.Utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net6.0/MonoMod.Utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net7.0/MonoMod.Utils.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net7.0/MonoMod.Utils.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net7.0/MonoMod.Utils.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net7.0/MonoMod.Utils.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net7.0/MonoMod.Utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net7.0/MonoMod.Utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net8.0/MonoMod.Utils.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net8.0/MonoMod.Utils.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net8.0/MonoMod.Utils.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net8.0/MonoMod.Utils.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net8.0/MonoMod.Utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net8.0/MonoMod.Utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net9.0/MonoMod.Utils.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net9.0/MonoMod.Utils.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net9.0/MonoMod.Utils.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net9.0/MonoMod.Utils.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/net9.0/MonoMod.Utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/net9.0/MonoMod.Utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/netstandard2.0/MonoMod.Utils.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/netstandard2.0/MonoMod.Utils.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/netstandard2.0/MonoMod.Utils.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/netstandard2.0/MonoMod.Utils.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MonoMod.Utils.25.0.8/lib/netstandard2.0/MonoMod.Utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/MonoMod.Utils.25.0.8/lib/netstandard2.0/MonoMod.Utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/.signature.p7s" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/.signature.p7s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/LICENSE.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/LICENSE.TXT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/System.Reflection.Emit.4.7.0.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/System.Reflection.Emit.4.7.0.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/THIRD-PARTY-NOTICES.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/MonoAndroid10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/MonoAndroid10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/MonoTouch10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/MonoTouch10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/net45/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/net45/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/netcore50/System.Reflection.Emit.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/netcore50/System.Reflection.Emit.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/netcoreapp2.0/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/netcoreapp2.0/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/netstandard1.1/System.Reflection.Emit.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/netstandard1.1/System.Reflection.Emit.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/netstandard1.1/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/netstandard1.1/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/netstandard1.3/System.Reflection.Emit.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/netstandard1.3/System.Reflection.Emit.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/netstandard2.0/System.Reflection.Emit.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/netstandard2.0/System.Reflection.Emit.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/netstandard2.0/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/netstandard2.0/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/netstandard2.1/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/netstandard2.1/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/xamarinios10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/xamarinios10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/xamarinmac20/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/xamarinmac20/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/xamarintvos10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/xamarintvos10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/lib/xamarinwatchos10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/lib/xamarinwatchos10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/MonoAndroid10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/MonoAndroid10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/MonoTouch10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/MonoTouch10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/net45/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/net45/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netcoreapp2.0/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netcoreapp2.0/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/System.Reflection.Emit.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/System.Reflection.Emit.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/de/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/de/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/es/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/es/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/fr/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/fr/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/it/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/it/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/ja/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/ja/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/ko/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/ko/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/ru/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/ru/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/zh-hans/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/zh-hans/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/zh-hant/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard1.1/zh-hant/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard2.0/System.Reflection.Emit.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard2.0/System.Reflection.Emit.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard2.0/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard2.0/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/netstandard2.1/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/netstandard2.1/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/xamarinios10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/xamarinios10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/xamarinmac20/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/xamarinmac20/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/xamarintvos10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/xamarintvos10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/ref/xamarinwatchos10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/ref/xamarinwatchos10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/runtimes/aot/lib/netcore50/System.Reflection.Emit.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/runtimes/aot/lib/netcore50/System.Reflection.Emit.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/runtimes/aot/lib/netcore50/System.Reflection.Emit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/runtimes/aot/lib/netcore50/System.Reflection.Emit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/useSharedDesignerContext.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/useSharedDesignerContext.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Reflection.Emit.4.7.0/version.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.Reflection.Emit.4.7.0/version.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/.signature.p7s" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/.signature.p7s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/LICENSE.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/LICENSE.TXT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/System.ValueTuple.4.5.0.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/System.ValueTuple.4.5.0.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/THIRD-PARTY-NOTICES.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/MonoAndroid10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/MonoAndroid10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/MonoTouch10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/MonoTouch10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/net461/System.ValueTuple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/net461/System.ValueTuple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/net461/System.ValueTuple.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/net461/System.ValueTuple.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/net47/System.ValueTuple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/net47/System.ValueTuple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/net47/System.ValueTuple.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/net47/System.ValueTuple.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/netcoreapp2.0/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/netcoreapp2.0/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/netstandard1.0/System.ValueTuple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/netstandard1.0/System.ValueTuple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/netstandard1.0/System.ValueTuple.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/netstandard1.0/System.ValueTuple.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/netstandard2.0/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/netstandard2.0/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/uap10.0.16299/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/uap10.0.16299/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/xamarinios10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/xamarinios10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/xamarinmac20/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/xamarinmac20/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/xamarintvos10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/xamarintvos10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/xamarinwatchos10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/lib/xamarinwatchos10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/MonoAndroid10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/MonoAndroid10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/MonoTouch10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/MonoTouch10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/net461/System.ValueTuple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/net461/System.ValueTuple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/net47/System.ValueTuple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/net47/System.ValueTuple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/netcoreapp2.0/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/netcoreapp2.0/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/netstandard2.0/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/netstandard2.0/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/uap10.0.16299/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/uap10.0.16299/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/xamarinios10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/xamarinios10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/xamarinmac20/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/xamarinmac20/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/xamarintvos10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/xamarintvos10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/xamarinwatchos10/_._" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/ref/xamarinwatchos10/_._" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/useSharedDesignerContext.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/useSharedDesignerContext.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/version.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages/System.ValueTuple.4.5.0/version.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HugKitten&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HugKitten/GravshipStuffForDBH.git&quot;,
+    &quot;accountId&quot;: &quot;d7667231-c161-4f7a-8d0e-1f8a7bae41d8&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/08/bc27e720/LookMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/09/fa5af6ed/Scribe_Collections.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/0c/c0e05796/ModContentPack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/10/541fe43e/CompFacilityInUse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/18/7e1ab1f4/RecipeDef.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/20/a99140aa/StoreUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/3f/9a3ad2d9/IncidentWorker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/3f/f96258ed/Translator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/45/024cef57/Building_Heater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/49/e7f10ddc/BuildableDef.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/50/0f87e7b2/CompPowerTrader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/51/3043f6cc/Alert_IdeoBuildingMissing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/52/f3e5bd55/Mod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/53/a067af81/CompProperties_Power.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/61/8418b004/Scribe_Values.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/7b/190ecd7e/DebugOutputsHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/7c/d5b3cde8/CompPower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/7f/63ebdc1b/Widgets.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/81/968e2d61/CompBandNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/82/75ab174f/TranslatorFormattedStringExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/8a/fa251e94/Find.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/90/c295abe9/ModSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/94/09a69580/BuildCopyCommandUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/a1/ee3bd4d9/Listing_ResourceReadout.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/ab/9b03f29e/ResearchProjectDef.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/ad/52aa1cec/DesignationCategoryDef.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/c2/8350450f/PatchOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/d0/4d559aed/DebugOutputsEconomy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/d4/d23240df/ThingDef.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/d9/059ef008/TabRecord.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/e4/e2f85e98/DebugOutputsPawns.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/e5/8c9a3a82/Building_GrowthVat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/e7/6baaf8f3/ThingComp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/e9/633b0cac/GenCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/ea/8dc2ad91/Listing_Tree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/ed/cd89a54a/ResearchManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/ef/4f553ab5/RecipeDefGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/ef/ceec7492/Building.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/f3/c9a7c883/Listing_ScenEdit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/f6/0f1c4dca/Building_Cooler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/fb/88b53ef6/ThingWithComps.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31482697ada14932981abc5e76101d5df05000/ff/28975b9f/Listing_Standard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/00/1e9162eb/CompProperties_WaterPumpingStation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/0d/4a773cb5/CompBaseWell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/12/e9defccd/DefExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/39/8ed7710b/CompProperties_WaterStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/39/fa23a368/ContaminationLevel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/3b/69ac72ca/PlumbingNet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/45/62daeda5/CompOxygenGenerationSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/5a/fd928a8c/Settings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/5e/fc109185/CompWaterInlet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/62/8681efa9/IncidentWorker_TowerContamination.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/69/acbdc8dc/CompWaterPumpingStation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/7a/04a4ce47/CompProperties_Pipe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/92/70be36c1/CompProperties_WaterTrader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/a5/6152c376/Dialog_DebugHygiene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/a8/0d69ff7f/HygieneCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/a8/3ae9f5e2/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/ac/bbc6ab0b/CompPipe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/b9/b249fa3c/DubsBadHygieneMod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/bd/8e0712c0/CompWindPump.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/c4/294d982d/DubDef.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/d1/abaa4dd0/CompProperties_WaterInlet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66f39daeb14b4a148ef4ed9738cae10c61c00/d9/3b47cb20/CompWaterStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb365ec900064090be06009fa5565017109800/31/e2fe601f/Enumerable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e53399289d9b419d83f9f5b02c5cf609257a00/3c/6f66c40c/HarmonyMethod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e53399289d9b419d83f9f5b02c5cf609257a00/45/4005bd4b/CodeMatch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e53399289d9b419d83f9f5b02c5cf609257a00/4c/5b831a6f/Harmony.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e53399289d9b419d83f9f5b02c5cf609257a00/5b/81ca70f8/CodeInstruction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e53399289d9b419d83f9f5b02c5cf609257a00/84/a11f262e/PatchProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e53399289d9b419d83f9f5b02c5cf609257a00/98/3dc61d90/AccessTools.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e53399289d9b419d83f9f5b02c5cf609257a00/bb/43a99371/CodeInstructionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e53399289d9b419d83f9f5b02c5cf609257a00/e0/b26c218d/CodeMatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/66f39daeb14b4a148ef4ed9738cae10c61c00/d6/152ac520/BadHygiene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2b4dcbdb9d48667b92f2c9e83bf5d616dacf7033a011f364bb145bb3530d3fa/InvalidOperationException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3b1d98b0cd30de2f16d81793549ad22ffb59f993c892f76ed012ec841ab7f555/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5717cc5a4fb2bce4b52b5952a402cfebf091cffccddfecf283c3daa72580/Environment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/88bcef5c251eeee36c36e378fc9af92fff69a6389c53d974f99a8f449c596f7/Dictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/98c9596d0e36102c8ff1552c429a4d982da8af43d3637329efd3cab9654a/StringBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bc9b377a24e373bff89e77b1768c98b2ad1e5b249515e12c6cf7c1989c6ff3/Type.Helpers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompAtmosphericPumpingStation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompAtmosphericWaterInlet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompCompressedWaterStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompProperties_AtmosphericPumpingStation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompProperties_CompressedWaterStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompProperties_TreatedWaterInlet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/CompTreatedWaterInlet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/GravshipStuffForDubsBadHygieneMod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/HarmonyPatches/Patcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/PatchCard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/PlumbingNetHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Kitty.GravshipStuffForDBH/packages.config" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="34DbGo9jZ8xt3sfMG6HlfMeAU8l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4560f556-b06c-4235-8bd6-b6904c830e73" name="Changes" comment="" />
+      <created>1756437701996</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756437701996</updated>
+      <workItem from="1756437705966" duration="31000" />
+      <workItem from="1760750999587" duration="20629000" />
+      <workItem from="1760881061372" duration="2000" />
+      <workItem from="1760881089038" duration="22728000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
