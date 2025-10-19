@@ -22,10 +22,10 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
         public void PatchAll()
         {
             if (this._settings.patchContaminationEvent)
-                this._harmony.CreateClassProcessor(typeof(TowerContaminationIncident_Patch)).Patch();
+                this._harmony.PatchCategory("TowerContaminationIncident");
 
             if (this._settings.patchWaterTowers) 
-                this._harmony.CreateClassProcessor(typeof(WaterStorage_Patch)).Patch();
+                this._harmony.PatchCategory("WaterStorage");
         }
     }
-}
+} 

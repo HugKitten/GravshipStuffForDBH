@@ -1,18 +1,26 @@
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using DubsBadHygiene;
 using HarmonyLib;
+using RimWorld.Planet;
 
 namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
 {
+    [HarmonyPatchCategory("TowerContaminationIncident")]
     [HarmonyPatch]
-    public class TowerContaminationIncident_Patch
+    public static class TowerContaminationIncidentPatch
     {
+        private static readonly Type TowerContaminationIncidentType =
+            AccessTools.TypeByName("DubsBadHygiene.IncidentWorker_TowerContamination");
+        private static readonly Type PlumbingNetType = AccessTools.TypeByName("DubsBadHygiene.PlumbingNet");
+        private static readonly MethodInfo HasFilterMethod = AccessTools.PropertyGetter(PlumbingNetType, "HasFilter");
+        private static readonly CodeInstruction EnablesContaminationIncidentCall = CodeInstruction.Call(typeof(PlumbingNetHelper),
+            nameof(PlumbingNetHelper.EnablesContaminationIncident));
+        
         static IEnumerable<MethodBase> TargetMethods()
         {
-            var towerContaminationIncidentType =
-                AccessTools.TypeByName("DubsBadHygiene.IncidentWorker_TowerContamination");
-            foreach (var method in AccessTools.GetDeclaredMethods(towerContaminationIncidentType))
+            foreach (var method in AccessTools.GetDeclaredMethods(TowerContaminationIncidentType))
                 yield return method;
         }
         
@@ -21,9 +29,9 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
         {
             foreach (var instruction in instructions)
             {
-                if (instruction.Calls(AccessTools.PropertyGetter(typeof(PlumbingNet), nameof(PlumbingNet.HasFilter))))
+                if (instruction.Calls(HasFilterMethod))
                 {
-                    yield return CodeInstruction.Call(typeof(PlumbingNetHelper), nameof(PlumbingNetHelper.EnablesContaminationIncident));
+                    yield return EnablesContaminationIncidentCall;
                     continue;
                 }
                 
