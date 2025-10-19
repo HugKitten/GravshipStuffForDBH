@@ -50,8 +50,8 @@ namespace GravshipStuffForDubsBadHygiene
             if (this.ParentHolder is MinifiedThing)
                 return base.CompInspectStringExtra();
 
-            var groundCapacity = "GroundCapacity".Translate((NamedArgument)this.WaterCapacity.ToString("0"));
-            var pollutionLevel = "PollutionLevel".Translate((NamedArgument)this.PollutionPct.ToStringPercent());
+            var groundCapacity = "GroundCapacity".Translate(this.WaterCapacity.ToString("0"));
+            var pollutionLevel = "PollutionLevel".Translate(this.PollutionPct.ToStringPercent());
             
             var pipeComp = this.PipeComp;
             if (pipeComp == null)
@@ -61,7 +61,7 @@ namespace GravshipStuffForDubsBadHygiene
             else
             {
                 var waterStorage =
-                    "TotalWaterStorage".Translate((NamedArgument)pipeComp.pipeNet.WaterStorage.ToString("0.0"));
+                    "TotalWaterStorage".Translate(pipeComp.pipeNet.WaterStorage.ToString("0.0"));
                 var pipedPumpCapacity = "PipedPumpCapacity".Translate(
                     pipeComp.pipeNet.PumpingCapacitySum.ToString("0"),
                     pipeComp.pipeNet.GroundWaterCapacitySum.ToString("0"),

@@ -32,22 +32,22 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
             listingStandard.Begin(inRect);
 
             // Water station
-            listingStandard.Label("Atmospheric".Translate());
-            listingStandard.CheckboxLabeled("AtmosphericIsTreated".Translate(), ref Settings.atmosphericIsTreated);
-            listingStandard.TextFieldNumericLabeled("AtmosphericYieldPowered".Translate(), ref Settings.atmosphericYieldPowered, ref atmosphericYieldPoweredBuffer, 0F, 10_000F);
-            listingStandard.TextFieldNumericLabeled("AtmosphericYieldUnpowered".Translate(), ref Settings.atmosphericYieldUnpowered, ref atmosphericYieldUnpoweredBuffer, 0F, 10_000F);
-            listingStandard.TextFieldNumericLabeled("AtmosphericPowerConsumption".Translate(), ref Settings.atmosphericPowerConsumption, ref atmosphericPowerConsumptionBuffer, 0F,10_000F);
+            listingStandard.Label("GSSFDBH_Atmospheric".Translate());
+            listingStandard.CheckboxLabeled("GSSFDBH_AtmosphericIsTreated".Translate(), ref Settings.atmosphericIsTreated);
+            listingStandard.TextFieldNumericLabeled("GSSFDBH_AtmosphericYieldPowered".Translate(), ref Settings.atmosphericYieldPowered, ref atmosphericYieldPoweredBuffer, 0F, 10_000F);
+            listingStandard.TextFieldNumericLabeled("GSSFDBH_AtmosphericYieldUnpowered".Translate(), ref Settings.atmosphericYieldUnpowered, ref atmosphericYieldUnpoweredBuffer, 0F, 10_000F);
+            listingStandard.TextFieldNumericLabeled("GSSFDBH_AtmosphericPowerConsumption".Translate(), ref Settings.atmosphericPowerConsumption, ref atmosphericPowerConsumptionBuffer, 0F,10_000F);
             
             // Compressed tank
-            listingStandard.Label("Tank".Translate());
-            listingStandard.TextFieldNumericLabeled("TankCapacityPowered".Translate(), ref Settings.tankStorageCapPowered, ref tankStorageCapPoweredBuffer, 0F,100_000F);
-            listingStandard.TextFieldNumericLabeled("TankCapacityUnpowered".Translate(), ref Settings.tankStorageCapUnpowered, ref tankStorageCapUnpoweredBuffer, 0F, 100_000F);
-            listingStandard.TextFieldNumericLabeled("TankPowerConsumption".Translate(), ref Settings.tankPowerConsumption, ref tankPowerConsumptionBuffer, 0F, 10_000F);
+            listingStandard.Label("GSSFDBH_Tank".Translate());
+            listingStandard.TextFieldNumericLabeled("GSSFDBH_TankCapacityPowered".Translate(), ref Settings.tankStorageCapPowered, ref tankStorageCapPoweredBuffer, 0F,100_000F);
+            listingStandard.TextFieldNumericLabeled("GSSFDBH_TankCapacityUnpowered".Translate(), ref Settings.tankStorageCapUnpowered, ref tankStorageCapUnpoweredBuffer, 0F, 100_000F);
+            listingStandard.TextFieldNumericLabeled("GSSFDBH_TankPowerConsumption".Translate(), ref Settings.tankPowerConsumption, ref tankPowerConsumptionBuffer, 0F, 10_000F);
             
             // Patches
-            listingStandard.Label("Patch".Translate());
-            listingStandard.CheckboxLabeled("PatchEvent".Translate(), ref Settings.patchContaminationEvent);
-            listingStandard.CheckboxLabeled("PatchTowers".Translate(), ref Settings.patchWaterTowers);
+            listingStandard.Label("GSSFDBH_Patch".Translate());
+            listingStandard.CheckboxLabeled("GSSFDBH_PatchEvent".Translate(), ref Settings.patchContaminationEvent);
+            listingStandard.CheckboxLabeled("GSSFDBH_PatchTowers".Translate(), ref Settings.patchWaterTowers);
 
             /*
             listingStandard.Label("Patch water storage to see the atmospheric water station as a treated water source.");

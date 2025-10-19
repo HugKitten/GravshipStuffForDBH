@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-    <Atmospheric>Atmospheric Water Station</Atmospheric>
-    <AtmosphericIsTreated>Count as a treated water source</AtmosphericIsTreated>
-    <AtmosphericYieldPowered>Water produced per station per day when powered</AtmosphericYieldPowered>
-    <AtmosphericYieldUnpowered>Water produced per station per day when not powered</AtmosphericYieldUnpowered>
-    <AtmosphericPowerConsumption>Wats of power required</AtmosphericPowerConsumption>
+    <GSSFDBH_Atmospheric>Atmospheric Water Station</GSSFDBH_Atmospheric>
+    <GSSFDBH_AtmosphericIsTreated>Count as a treated water source</GSSFDBH_AtmosphericIsTreated>
+    <GSSFDBH_AtmosphericYieldPowered>Water produced per station per day when powered</GSSFDBH_AtmosphericYieldPowered>
+    <GSSFDBH_AtmosphericYieldUnpowered>Water produced per station per day when not powered</GSSFDBH_AtmosphericYieldUnpowered>
+    <GSSFDBH_AtmosphericPowerConsumption>Wats of power required</GSSFDBH_AtmosphericPowerConsumption>
 
-    <Tank>Compressed Water Tank.</Tank>
-    <TankCapacityPowered>Water Capacity when powered</TankCapacityPowered>
-    <TankCapacityUnpowered>Water Capacity when not powered</TankCapacityUnpowered>
-    <TankPowerConsumption>Wats of power required</TankPowerConsumption>
+    <GSSFDBH_Tank>Compressed Water Tank.</GSSFDBH_Tank>
+    <GSSFDBH_TankCapacityPowered>Water Capacity when powered</GSSFDBH_TankCapacityPowered>
+    <GSSFDBH_TankCapacityUnpowered>Water Capacity when not powered</GSSFDBH_TankCapacityUnpowered>
+    <GSSFDBH_TankPowerConsumption>Wats of power required</GSSFDBH_TankPowerConsumption>
 
-    <Patch>Game must be restarted for patches to be enabled or disabled.</Patch>
-    <PatchEvent>Patch contamination event to never trigger when water source is treated</PatchEvent>
-    <PatchTowers>Patch water towers to show as treated when all water sources are Atmospheric Water Station</PatchTowers>
+    <GSSFDBH_Patch>Game must be restarted for patches to be enabled or disabled.</GSSFDBH_Patch>
+    <GSSFDBH_PatchEvent>Patch contamination event to never trigger when water source is treated</GSSFDBH_PatchEvent>
+    <GSSFDBH_PatchTowers>Patch water towers to show as treated when all water sources are Atmospheric Water Station</PatchTowers>
 </LanguageData>

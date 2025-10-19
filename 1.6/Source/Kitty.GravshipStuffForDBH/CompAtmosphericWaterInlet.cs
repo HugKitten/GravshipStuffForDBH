@@ -59,7 +59,7 @@ namespace GravshipStuffForDubsBadHygiene
                 return base.CompInspectStringExtra();
 
             var pipeNet = this.PipeComp.pipeNet;
-            var atmosphericYield = "AtmosphericYield".Translate((NamedArgument)this.YieldPowered.ToString("0.0"));
+            var atmosphericYield = "GSSFDBH_AtmosphericYield".Translate(this.YieldPowered.ToString("0.0"));
             var totalWaterStorage = pipeNet.WaterTowers.Any()
                 ? "TotalWaterStorage".Translate(pipeNet.WaterStorage.ToString("0"))
                 : "NoWaterTowers".Translate();
