@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Reflection;
 using DubsBadHygiene;
 using HarmonyLib;
-using RimWorld.Planet;
 
 namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
 {

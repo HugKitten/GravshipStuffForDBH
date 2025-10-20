@@ -21,9 +21,9 @@ namespace GravshipStuffForDubsBadHygiene
             
             this.YieldPowered = settings.atmosphericYieldPowered;
             this.YieldUnpowered = settings.atmosphericYieldUnpowered;
-            this.powerComp.PowerOutput = -settings.atmosphericPowerConsumption;
             
             base.PostSpawnSetup(respawningAfterLoad);
+            this.powerComp.PowerOutput = -settings.atmosphericPowerConsumption;
         }
 
         // The pumping station inspect string includes duplicate data that is already exposed by the water inlet.
