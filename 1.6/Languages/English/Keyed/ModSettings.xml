@@ -13,5 +13,5 @@
 
     <GSSFDBH_Patch>Game must be restarted for patches to be enabled or disabled.</GSSFDBH_Patch>
     <GSSFDBH_PatchEvent>Patch contamination event to never trigger when water source is treated</GSSFDBH_PatchEvent>
-    <GSSFDBH_PatchTowers>Patch water towers to show as treated when all water sources are Atmospheric Water Station</PatchTowers>
+    <GSSFDBH_PatchTowers>Patch water towers to show as treated when all water sources are Atmospheric Water Station</GSSFDBH_PatchTowers>
 </LanguageData>
