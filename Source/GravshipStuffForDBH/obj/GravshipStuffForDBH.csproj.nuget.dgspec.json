@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/sarah/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/RimWorld/Mods/GravshipStuffForDBH/Source/GravshipStuffForDBH/GravshipStuffForDBH.csproj": {}
+  },
+  "projects": {
+    "/home/sarah/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/RimWorld/Mods/GravshipStuffForDBH/Source/GravshipStuffForDBH/GravshipStuffForDBH.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sarah/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/RimWorld/Mods/GravshipStuffForDBH/Source/GravshipStuffForDBH/GravshipStuffForDBH.csproj",
+        "projectName": "GravshipStuffForDubsBadHygiene",
+        "projectPath": "/home/sarah/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/RimWorld/Mods/GravshipStuffForDBH/Source/GravshipStuffForDBH/GravshipStuffForDBH.csproj",
+        "packagesPath": "/home/sarah/.nuget/packages/",
+        "outputPath": "/home/sarah/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/RimWorld/Mods/GravshipStuffForDBH/Source/GravshipStuffForDBH/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sarah/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Lib.Harmony": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

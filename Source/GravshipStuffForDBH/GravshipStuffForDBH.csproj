@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>GravshipStuffForDubsBadHygiene</RootNamespace>
+    <AssemblyName>GravshipStuffForDubsBadHygiene</AssemblyName>
+    <TargetFramework>net472</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>../../1.6/Assemblies/</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET48;NETFRAMEWORK</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>5</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>../../1.6/Assemblies/</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RimWorldManagedDir Condition="'$(OS)' == 'Windows_NT'">../../../../RimWorldWin64_Data/Managed</RimWorldManagedDir>
+    <RimWorldManagedDir Condition="'$(OS)' != 'Windows_NT'">../../../../RimWorldLinux_Data/Managed</RimWorldManagedDir>
+    <RimworldWorkshopDir>../../../../../../workshop/content/294100</RimworldWorkshopDir>
+    <DubsModDir>$(RimworldWorkshopDir)/836308268</DubsModDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldManagedDir)/UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldManagedDir)/Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BadHygiene">
+      <HintPath>$(DubsModDir)/1.6/Assemblies/BadHygiene.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'@(Reference->WithMetadataValue('Identity', 'Assembly-CSharp')->Metadata('HintPath')->Exists())' == ''">
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.4.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="GravshipStuffForDubsBadHygieneSettings.cs">
+      <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CompProperties_AtmosphericInlet.cs">
+      <DependentUpon>CompAtmosphericWaterInlet.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CompProperties_AtmosphericPumpingStation.cs">
+      <DependentUpon>CompAtmosphericPumpingStation.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CompProperties_CompressedWaterStorage.cs">
+      <DependentUpon>CompCompressedWaterStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CompProperties_TreatedWaterInlet.cs">
+      <DependentUpon>CompTreatedWaterInlet.cs</DependentUpon>
+    </Compile>
+    <Compile Update="PatchCard.cs">
+      <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

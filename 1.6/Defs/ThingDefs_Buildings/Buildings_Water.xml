@@ -6,7 +6,7 @@
         <label>atmospheric water station</label>
         <description>Extract water from atmosphere. Pumping capacity: 600 L/day.</description>
         <graphicData>
-            <texPath>TEFNUT/Things/Building/Water/GravshipWaterGenerator</texPath>
+            <texPath>Kitty/Things/Building/Water/GravshipWaterGenerator</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(2.3,2.3)</drawSize>
             <drawRotated>false</drawRotated>
@@ -29,12 +29,8 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericWaterStation">
-                <Capacity>600</Capacity>
-            </li>
-            <!--<li Class="DubsBadHygiene.CompProperties_WaterPumpingStation">
-                <Capacity>10000</Capacity>
-            </li>-->
+            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericInlet"/>
+            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericPumpingStation"/>
         </comps>
         <researchPrerequisites>
             <li>AtmosphericWaterGeneration</li>
@@ -48,7 +44,7 @@
         <label>compressed water tank</label>
         <description>Stores water for use by plumbed fixtures. The water must be drained if it becomes contaminated. Capacity when powered: 12000 Capacity when unpowered: 4000.</description>
         <graphicData>
-            <texPath>TEFNUT/Things/Building/Water/GravshipWaterTank</texPath>
+            <texPath>Kitty/Things/Building/Water/GravshipWaterTank</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>(1.5,2)</drawSize>
@@ -66,10 +62,7 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_CompressedWaterStorage">
-                <WaterStorageCap>12000</WaterStorageCap>
-                <UnpoweredWaterStorageCap>4000</UnpoweredWaterStorageCap>
-            </li>
+            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_CompressedWaterStorage"/>
         </comps>
         <rotatable>true</rotatable>
         <defaultPlacingRot>South</defaultPlacingRot>
