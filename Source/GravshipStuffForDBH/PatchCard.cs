@@ -1,4 +1,4 @@
-namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
+namespace GravshipStuffForDubsBadHygiene
 {
     /*
     public record PatchCard

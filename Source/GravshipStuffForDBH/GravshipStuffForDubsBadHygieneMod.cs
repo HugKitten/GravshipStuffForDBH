@@ -1,7 +1,7 @@
 using UnityEngine;
 using Verse;
 
-namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
+namespace GravshipStuffForDubsBadHygiene
 {
     public class GravshipStuffForDubsBadHygieneMod : Mod
     {

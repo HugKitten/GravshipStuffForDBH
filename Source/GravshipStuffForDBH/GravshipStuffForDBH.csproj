@@ -60,5 +60,25 @@
   <ItemGroup>
     <PackageReference Include="Lib.Harmony" Version="2.4.1" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="GravshipStuffForDubsBadHygieneSettings.cs">
+      <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CompProperties_AtmosphericInlet.cs">
+      <DependentUpon>CompAtmosphericWaterInlet.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CompProperties_AtmosphericPumpingStation.cs">
+      <DependentUpon>CompAtmosphericPumpingStation.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CompProperties_CompressedWaterStorage.cs">
+      <DependentUpon>CompCompressedWaterStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CompProperties_TreatedWaterInlet.cs">
+      <DependentUpon>CompTreatedWaterInlet.cs</DependentUpon>
+    </Compile>
+    <Compile Update="PatchCard.cs">
+      <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
 
 </Project>

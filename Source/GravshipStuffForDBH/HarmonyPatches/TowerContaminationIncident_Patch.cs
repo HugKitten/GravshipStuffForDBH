@@ -17,13 +17,10 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
         private static readonly MethodInfo HasFilterMethod = AccessTools.PropertyGetter(PlumbingNetType, nameof(PlumbingNet.HasFilter));
         private static readonly CodeInstruction EnablesContaminationIncidentCall = CodeInstruction.Call(typeof(PlumbingNetHelper),
             nameof(PlumbingNetHelper.EnablesContaminationIncident), [PlumbingNetType]);
-        
-        static IEnumerable<MethodBase> TargetMethods()
-        {
-            foreach (var method in AccessTools.GetDeclaredMethods(TowerContaminationIncidentType))
-                yield return method;
-        }
-        
+
+        private static IEnumerable<MethodBase> TargetMethods() => 
+            AccessTools.GetDeclaredMethods(TowerContaminationIncidentType);
+
         private static IEnumerable<CodeInstruction> Transpiler(
             IEnumerable<CodeInstruction> instructions )
         {

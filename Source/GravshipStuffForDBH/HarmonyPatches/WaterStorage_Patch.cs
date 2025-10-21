@@ -14,7 +14,7 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
         private static readonly Type PlumbingNetType =typeof(PlumbingNet);
         private static readonly MethodInfo HasFilterMethod = AccessTools.PropertyGetter(PlumbingNetType, nameof(PlumbingNet.HasFilter));
         private static readonly CodeInstruction EnablesContaminationIncidentCall = CodeInstruction.Call(typeof(PlumbingNetHelper),
-            nameof(PlumbingNetHelper.IsTreated), new []{PlumbingNetType});
+            nameof(PlumbingNetHelper.IsTreated), [PlumbingNetType]);
         
         static IEnumerable<MethodBase> TargetMethods()
         {
