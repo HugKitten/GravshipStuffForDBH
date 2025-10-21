@@ -17,13 +17,13 @@ namespace GravshipStuffForDubsBadHygiene
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
-            var tankStorageCapPoweredBuffer = Settings.atmosphericYieldPowered.ToString("0.0F");
-            var tankStorageCapUnpoweredBuffer = Settings.atmosphericYieldUnpowered.ToString("0.0F");
-            var atmosphericPowerConsumptionBuffer = Settings.atmosphericPowerConsumption.ToString("0.0F");
+            var tankStorageCapPoweredBuffer = Settings.atmosphericYieldPowered.ToString("0.0");
+            var tankStorageCapUnpoweredBuffer = Settings.atmosphericYieldUnpowered.ToString("0.0");
+            var atmosphericPowerConsumptionBuffer = Settings.atmosphericPowerConsumption.ToString("0.0");
             
-            var atmosphericYieldPoweredBuffer = Settings.atmosphericYieldPowered.ToString("0.0F");
-            var atmosphericYieldUnpoweredBuffer = Settings.atmosphericYieldUnpowered.ToString("0.0F");
-            var tankPowerConsumptionBuffer = Settings.tankPowerConsumption.ToString("0.0F");
+            var atmosphericYieldPoweredBuffer = Settings.atmosphericYieldPowered.ToString("0.0");
+            var atmosphericYieldUnpoweredBuffer = Settings.atmosphericYieldUnpowered.ToString("0.0");
+            var tankPowerConsumptionBuffer = Settings.tankPowerConsumption.ToString("0.0");
             
             var listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
@@ -46,6 +46,12 @@ namespace GravshipStuffForDubsBadHygiene
             listingStandard.CheckboxLabeled("GSSFDBH_PatchEvent".Translate(), ref Settings.patchContaminationEvent);
             listingStandard.CheckboxLabeled("GSSFDBH_PatchTowers".Translate(), ref Settings.patchWaterTowers);
 
+            var reset = listingStandard.ButtonText("Reset");
+            if (reset)
+            {
+                Settings.ResetToDefault();
+            }
+            
             /*
             listingStandard.Label("Patch water storage to see the atmospheric water station as a treated water source.");
             Widgets.BeginScrollView(inRect, ref scrollPosition, new Rect(0, 0, inRect.width, 10));

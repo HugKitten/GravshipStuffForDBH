@@ -18,7 +18,7 @@ namespace GravshipStuffForDubsBadHygiene
         public bool patchWaterTowers = true;
 
         public override void ExposeData()
-        {   
+        {
             Scribe_Values.Look(ref atmosphericIsTreated, "AtmosphericIsTreated", true);
             Scribe_Values.Look(ref atmosphericYieldPowered, "AtmosphericYieldPowered", 600F);
             // ReSharper disable once RedundantArgumentDefaultValue
@@ -31,6 +31,19 @@ namespace GravshipStuffForDubsBadHygiene
             
             Scribe_Values.Look(ref patchContaminationEvent, "PatchContaminationEvent", true);
             Scribe_Values.Look(ref patchWaterTowers, "waterTowersToPatch", true);
+        }
+
+        public virtual void ResetToDefault()
+        {
+            this.atmosphericIsTreated = true;
+            this.atmosphericYieldPowered = 600F;
+            this.atmosphericYieldUnpowered = 0F;
+            this.atmosphericPowerConsumption = 500F;
+            this.tankStorageCapPowered = 4000;
+            this.tankStorageCapUnpowered = 12000;
+            this.tankPowerConsumption = 200F;
+            this.patchContaminationEvent = true; 
+            this.patchWaterTowers = true;
         }
     }
 }
