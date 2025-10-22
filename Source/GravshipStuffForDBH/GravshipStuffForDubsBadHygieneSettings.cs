@@ -10,12 +10,13 @@ namespace GravshipStuffForDubsBadHygiene
         public float atmosphericYieldUnpowered = 0F;
         public float atmosphericPowerConsumption = 500F;
 
-        public float tankStorageCapPowered = 4000;
-        public float tankStorageCapUnpowered = 12000;
+        public float tankStorageCapPowered = 4_000F;
+        public float tankStorageCapUnpowered = 12_000F;
         public float tankPowerConsumption = 200F;
 
         public bool patchContaminationEvent = true;
         public bool patchWaterTowers = true;
+        public bool patchPlumbingNet = true;
 
         public override void ExposeData()
         {
@@ -31,6 +32,7 @@ namespace GravshipStuffForDubsBadHygiene
             
             Scribe_Values.Look(ref patchContaminationEvent, "PatchContaminationEvent", true);
             Scribe_Values.Look(ref patchWaterTowers, "waterTowersToPatch", true);
+            Scribe_Values.Look(ref patchPlumbingNet, "patchPlumbingNet", true);
         }
 
         public virtual void ResetToDefault()
@@ -44,6 +46,7 @@ namespace GravshipStuffForDubsBadHygiene
             this.tankPowerConsumption = 200F;
             this.patchContaminationEvent = true; 
             this.patchWaterTowers = true;
+            this.patchPlumbingNet = true;
         }
     }
 }

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-    <GSSFDBH_Atmospheric>Atmospheric Water Station</GSSFDBH_Atmospheric>
+    <GSSFDBH_Atmospheric>Atmospheric Water Station (Apply on save load)</GSSFDBH_Atmospheric>
     <GSSFDBH_AtmosphericIsTreated>Count as a treated water source</GSSFDBH_AtmosphericIsTreated>
     <GSSFDBH_AtmosphericYieldPowered>Water produced per station per day when powered</GSSFDBH_AtmosphericYieldPowered>
     <GSSFDBH_AtmosphericYieldUnpowered>Water produced per station per day when not powered</GSSFDBH_AtmosphericYieldUnpowered>
     <GSSFDBH_AtmosphericPowerConsumption>Wats of power required</GSSFDBH_AtmosphericPowerConsumption>
 
-    <GSSFDBH_Tank>Compressed Water Tank.</GSSFDBH_Tank>
+    <GSSFDBH_Tank>Compressed Water Tank (Apply on save load)</GSSFDBH_Tank>
     <GSSFDBH_TankCapacityPowered>Water Capacity when powered</GSSFDBH_TankCapacityPowered>
     <GSSFDBH_TankCapacityUnpowered>Water Capacity when not powered</GSSFDBH_TankCapacityUnpowered>
     <GSSFDBH_TankPowerConsumption>Wats of power required</GSSFDBH_TankPowerConsumption>
 
+    <GSSFDBH_UpdateDefs>Apply Changes</GSSFDBH_UpdateDefs>
+
     <GSSFDBH_Patch>Game must be restarted for patches to be enabled or disabled.</GSSFDBH_Patch>
     <GSSFDBH_PatchEvent>Patch contamination event to never trigger when water source is treated</GSSFDBH_PatchEvent>
     <GSSFDBH_PatchTowers>Patch water towers to show as treated when all water sources are Atmospheric Water Station</GSSFDBH_PatchTowers>
+    <GSSFDBH_PatchPlumbingNet>Patch plumbing net to support non-static water storage</GSSFDBH_PatchPlumbingNet>
+    <GSSFDBH_Reset>Reset</GSSFDBH_Reset>
 </LanguageData>

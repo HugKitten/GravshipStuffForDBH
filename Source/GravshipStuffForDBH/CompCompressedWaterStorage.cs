@@ -1,6 +1,6 @@
 using System;
+using System.Collections.Generic;
 using DubsBadHygiene;
-using GravshipStuffForDubsBadHygiene.HarmonyPatches;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -22,22 +22,49 @@ namespace GravshipStuffForDubsBadHygiene
         /// Dubs if you see this, please include a virtual WaterStorageCap ❤️
         /// </summary>
         public virtual float WaterStorageCap => this.WorkingNow ? this.PoweredWaterStorageCap : this.UnpoweredWaterStorageCap;
-        public new CompProperties_CompressedWaterStorage Props => (CompProperties_CompressedWaterStorage) this.props ?? throw new InvalidOperationException("Props not set");
+        public virtual bool IsFull => this.WaterStorage >= this.WaterStorageCap;
+        public virtual bool IsAccepting => this.WaterStorage <= this.WaterStorageCap;
+        public virtual bool IsEmpty => this.WaterStorage <= 0;
+        public new virtual bool LowCapacity => this.WaterStorage < this.WaterStorageCap * 0.2;
 
+        public new virtual float CapPercent => this.WaterStorageCap == 0.0 ? 0.0f : this.WaterStorage / this.WaterStorageCap;
+        public new float space => Mathf.Max(0.0f, this.WaterStorageCap - this.WaterStorage);
+        
+        public new CompProperties_CompressedWaterStorage Props => (CompProperties_CompressedWaterStorage) this.props ?? throw new InvalidOperationException("Props not set");
+        public new void FillTank() => this.WaterStorage = this.WaterStorageCap;
+
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            foreach (var gizmo in base.CompGetGizmosExtra())
+            {
+                if (gizmo is Command_Action { defaultLabel: "Fill" } ca)
+                    ca.action = this.FillTank;
+                yield return gizmo;
+            }
+        }
+        
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            var settings = LoadedModManager.GetMod<GravshipStuffForDubsBadHygieneMod>()
-                .GetSettings<GravshipStuffForDubsBadHygieneSettings>();
-            
             base.PostSpawnSetup(respawningAfterLoad);
-            
-            this.PoweredWaterStorageCap = settings.tankStorageCapPowered;
-            this.UnpoweredWaterStorageCap = settings.tankStorageCapUnpowered;
+
+            this.PoweredWaterStorageCap = Props.WaterStorageCapPowered;
+            this.UnpoweredWaterStorageCap = Props.WaterStorageCapUnpowered;
             this.AutoGenRate = this.Props.AutoGenRate;
             this.Tickrate = this.Props.Tickrate;
             this.Auto = this.Props.Auto;
             this.AutoOnRain = this.Props.AutoOnRain;
-            this.powerComp.PowerOutput = -settings.tankPowerConsumption;
+            
+            /*
+            var settings = LoadedModManager.GetMod<GravshipStuffForDubsBadHygieneMod>()
+                .GetSettings<GravshipStuffForDubsBadHygieneSettings>();
+            if (this.powerComp != null)
+                this.powerComp.PowerOutput = -settings.tankPowerConsumption;
+            */
+        }
+
+        public override string GetDescriptionPart()
+        {
+            return "GSSFDBH_TankDescription".Translate(this.PoweredWaterStorageCap, this.UnpoweredWaterStorageCap);
         }
 
         /// <summary>
@@ -72,8 +99,8 @@ namespace GravshipStuffForDubsBadHygiene
                         autoGenRate *= this.parent.Map.weatherManager.RainRate;
                     this.WaterStorage += autoGenRate;
                     
-                    if (this.WaterStorage > (double) waterStorageCap)
-                      this.WaterStorage = waterStorageCap;
+                    if (this.WaterStorage > this.WaterStorageCap)
+                      this.WaterStorage = this.WaterStorageCap;
                     if (float.IsNaN(this.WaterStorage))
                     {
                         this.WaterStorage = 0.0f;
@@ -84,8 +111,8 @@ namespace GravshipStuffForDubsBadHygiene
                   return;
                 
                 this.WaterStorage += this.PipeComp.pipeNet.WaterPumpedPerTick;
-                if (ModOption.WaterPumpCapacity.Val == 0.0 || this.WaterStorage > (double) waterStorageCap)
-                    this.WaterStorage = waterStorageCap;
+                if (ModOption.WaterPumpCapacity.Val == 0.0 || this.WaterStorage > this.WaterStorageCap)
+                    this.WaterStorage = this.WaterStorageCap;
                 if (this.WaterStorage < 0.0)
                     this.WaterStorage = 0.0f;
                 if (float.IsNaN(this.WaterStorage))

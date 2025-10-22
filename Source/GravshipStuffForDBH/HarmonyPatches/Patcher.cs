@@ -17,6 +17,9 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
 
             if (settings.patchWaterTowers) 
                 harmony.PatchCategory("WaterStorage");
+            
+            if (settings.patchPlumbingNet)
+                harmony.PatchCategory("PlumbingNetPatch");
         }
     }
 } 

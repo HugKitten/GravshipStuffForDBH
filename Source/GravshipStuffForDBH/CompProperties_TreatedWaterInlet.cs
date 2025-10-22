@@ -5,7 +5,7 @@ namespace GravshipStuffForDubsBadHygiene
 {
     public class CompProperties_TreatedWaterInlet : CompProperties_WaterInlet
     {
-        public bool EnablesContaminationEvent = true;
+        public bool EnablesContaminationEvent { get; set; }= true;
 
         [Obsolete("Use TickContaminationChance instead")]
         public new bool Deep
@@ -20,9 +20,7 @@ namespace GravshipStuffForDubsBadHygiene
             set => base.Deep = !value;
         }
         
-        public CompProperties_TreatedWaterInlet()
-        {
+        public CompProperties_TreatedWaterInlet() => 
             this.compClass = typeof(CompTreatedWaterInlet);
-        }
     }
 }
