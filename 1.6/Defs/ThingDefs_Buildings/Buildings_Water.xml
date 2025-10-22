@@ -4,7 +4,6 @@
     <ThingDef ParentName="BasedWaterPump" DBHLite="true">
         <defName>Kitty_AtmosphericWaterGenerator</defName>
         <label>atmospheric water station</label>
-        <description>Extract water from atmosphere. Pumping capacity: 600 L/day.</description>
         <graphicData>
             <texPath>Kitty/Things/Building/Water/GravshipWaterGenerator</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -25,12 +24,12 @@
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>500</basePowerConsumption>
+                <basePowerConsumption>400</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
             <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericInlet"/>
-            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericPumpingStation"/>
+            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_WaterInletPumpingStation"/>
         </comps>
         <researchPrerequisites>
             <li>AtmosphericWaterGeneration</li>
@@ -42,7 +41,6 @@
     <ThingDef ParentName="BasedWaterTower" DBHLite="true">
         <defName>Kitty_CompressedWaterTank</defName>
         <label>compressed water tank</label>
-        <description>Stores water for use by plumbed fixtures. The water must be drained if it becomes contaminated. Capacity when powered: 12000 Capacity when unpowered: 4000.</description>
         <graphicData>
             <texPath>Kitty/Things/Building/Water/GravshipWaterTank</texPath>
             <graphicClass>Graphic_Multi</graphicClass>

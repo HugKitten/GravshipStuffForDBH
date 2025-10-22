@@ -28,8 +28,10 @@ namespace GravshipStuffForDubsBadHygiene
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
+            
             this.EnablesContaminationIncident = this.Props.EnablesContaminationEvent;
             this.RequiresFilter = this.Props.RequiresFilter;
+            UpdateCap();
         }
 
         // Overrides to skip ticking if filter is not required

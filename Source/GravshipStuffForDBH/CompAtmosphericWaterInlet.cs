@@ -1,5 +1,4 @@
 using System;
-using GravshipStuffForDubsBadHygiene.HarmonyPatches;
 using RimWorld;
 using Verse;
 
@@ -35,24 +34,31 @@ namespace GravshipStuffForDubsBadHygiene
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            var settings = LoadedModManager.GetMod<GravshipStuffForDubsBadHygieneMod>()
-                .GetSettings<GravshipStuffForDubsBadHygieneSettings>();
-            
             base.PostSpawnSetup(respawningAfterLoad);
+            
             this._powerComp = this.parent.GetComp<CompPowerTrader>();
             this._fuelComp = this.parent.GetComp<CompRefuelable>();
             this._breakdownableComp = this.parent.GetComp<CompBreakdownable>();
-
-            this.EnablesContaminationIncident = !settings.atmosphericIsTreated;
-            this.RequiresFilter = !settings.atmosphericIsTreated;
-            this.YieldPowered = settings.atmosphericYieldPowered;
-            this.YieldUnpowered = settings.atmosphericYieldUnpowered;
+            this.EnablesContaminationIncident = this.Props.EnablesContaminationEvent;
+            this.RequiresFilter = this.Props.RequiresFilter;
+            this.YieldPowered = this.Props.YieldPowered;
+            this.YieldUnpowered = this.Props.YieldUnpowered;
             this.Pollution = 0F;
             this.PolutionLog = "";
             
-            UpdateCap();
+            /*
+            var settings = LoadedModManager.GetMod<GravshipStuffForDubsBadHygieneMod>()
+                .GetSettings<GravshipStuffForDubsBadHygieneSettings>();
+            if (this._powerComp != null)
+                this._powerComp.PowerOutput = -settings.atmosphericPowerConsumption;
+            */
         }
-        
+
+        public override string GetDescriptionPart()
+        {
+            return "GSSFDBH_AtmosphericDescription".Translate(this.YieldPowered);
+        }
+
         public override string CompInspectStringExtra()
         {
             if (this.ParentHolder is MinifiedThing)

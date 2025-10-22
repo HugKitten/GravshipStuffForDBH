@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     <GSSFDBH_AtmosphericYield>Atmospheric yield: {0}L/day</GSSFDBH_AtmosphericYield>
+    <GSSFDBH_AtmosphericDescription>Extract water from atmosphere. Pumping capacity: {0} L/day.</GSSFDBH_AtmosphericDescription>
+    <GSSFDBH_TankDescription>Stores water for use by plumbed fixtures. The water must be drained if it becomes contaminated. Capacity when powered: {0} Capacity when unpowered: {1}.</GSSFDBH_TankDescription>
 </LanguageData>
