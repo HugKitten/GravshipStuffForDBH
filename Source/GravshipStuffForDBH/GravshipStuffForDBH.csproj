@@ -64,18 +64,6 @@
     <Compile Update="GravshipStuffForDubsBadHygieneSettings.cs">
       <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
     </Compile>
-    <Compile Update="CompProperties_AtmosphericInlet.cs">
-      <DependentUpon>CompAtmosphericWaterInlet.cs</DependentUpon>
-    </Compile>
-    <Compile Update="CompProperties_WaterInletPumpingStation.cs">
-      <DependentUpon>CompWaterInletPumpingStation.cs</DependentUpon>
-    </Compile>
-    <Compile Update="CompProperties_CompressedWaterStorage.cs">
-      <DependentUpon>CompCompressedWaterStorage.cs</DependentUpon>
-    </Compile>
-    <Compile Update="CompProperties_TreatedWaterInlet.cs">
-      <DependentUpon>CompTreatedWaterInlet.cs</DependentUpon>
-    </Compile>
     <Compile Update="PatchCard.cs">
       <DependentUpon>GravshipStuffForDubsBadHygieneMod.cs</DependentUpon>
     </Compile>
