@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GravshipStuffForDubsBadHygiene")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02b4f164c0f6e0ce4be683b70b430682ad5d43e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d72054ceec9dbdb1b109032806221eeaafe38d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("GravshipStuffForDubsBadHygiene")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GravshipStuffForDubsBadHygiene")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

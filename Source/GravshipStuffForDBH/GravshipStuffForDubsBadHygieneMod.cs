@@ -75,6 +75,6 @@ namespace GravshipStuffForDubsBadHygiene
             base.DoSettingsWindowContents(inRect);
         }
 
-        public override string SettingsCategory() => "Gravship Stuff for DBH";
+        public override string SettingsCategory() => "Dubs' Bad Hygiene - Odyssey Gravship Addon";
     }
 }
