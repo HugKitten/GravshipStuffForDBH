@@ -1,39 +1,36 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Reflection.Emit;
 using DubsBadHygiene;
 using HarmonyLib;
-using UnityEngine;
+using Verse;
 
 namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
 {
     // Patches WaterPumpedPerTick calculating 
     [HarmonyPatchCategory("PlumbingNetPatch")]
-    [HarmonyPatch(typeof(PlumbingNet), "TickWater")]
-    public class PlumbingNet_TickWWater_Patch
+    public class PlumbingNet_TickWater_Patch
     {
-        private static void PostFix(PlumbingNet __instance)
-        {
-            CompWaterInletCryo
-            // Get max water that can be pumped
-            var maxWaterPump = Mathf.Min(__instance.GroundWaterCapacitySum, __instance.PumpingCapacitySum);
-            if (maxWaterPump <= 0.0)
-            {
-                __instance.WaterPumpedPerTick = 0F;
-                return;
-            }
-            
-            // Get total tanks to pump water to
-            var awaitingTanks = Enumerable.Count(__instance.WaterTowers, ws => !ws.IsFull());
-            if (awaitingTanks <= 0)
-            {
-                __instance.WaterPumpedPerTick = 0F;
-                return;
-            }
+        private static int CountAccepting(IEnumerable<CompWaterStorage> waterStorages,
+            Func<CompWaterStorage, bool> predicate) =>
+            waterStorages.Count(IsAccepting);
 
-            // Get total water pump per tower
-            var waterPumpedPerTowerPerDay = maxWaterPump / awaitingTanks;
-            
-            // Set total pumped water per tick
-            __instance.WaterPumpedPerTick = waterPumpedPerTowerPerDay / 60_000F;
-        }
+        private static bool IsAccepting(CompWaterStorage storage) =>
+            storage is CompPoweredWaterStorage pws 
+                ? pws.AmountCanAccept >= 0F
+                : storage.WaterStorage < storage.GetWaterStorageCap();
+
+        private static IEnumerable<MethodBase> TargetMethods() =>
+            [AccessTools.Method(typeof(PlumbingNet), "TickWater")];
+
+        private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions) =>
+            new CodeMatcher(instructions)
+                .MatchStartForward(CodeMatch.Calls(() => GenCollection.Count(null, (Predicate<CompWaterStorage>)null)))
+                .ThrowIfInvalid("Could not patch IncidentWorker_TowerContamination.TickWater")
+                .SetOperandAndAdvance(
+                    AccessTools.Method(typeof(PlumbingNet_TickWater_Patch), nameof(CountAccepting))
+                ).InstructionEnumeration();
     }
 }

@@ -51,16 +51,19 @@ namespace GravshipStuffForDubsBadHygiene
             if (this.ParentHolder is MinifiedThing)
                 return base.CompInspectStringExtra();
 
-            var pipeNet = this.PipeComp.pipeNet;
             var atmosphericYield = "GSSFDBH_AtmosphericYield".Translate(this.GetGroundWaterCapacity.ToString("0.0"));
-            var totalWaterStorage = pipeNet.WaterTowers.Any()
-                ? "TotalWaterStorage".Translate(pipeNet.WaterStorage.ToString("0"))
-                : "NoWaterTowers".Translate();
+            var pipeComp = this.PipeComp;
+            if (pipeComp == null)
+                return atmosphericYield;
+            var pipeNet = pipeComp.pipeNet;
+            var waterStorage =
+                "TotalWaterStorage".Translate(pipeNet.WaterStorage.ToString("0.0"));
             var pipedPumpCapacity = "PipedPumpCapacity".Translate(
                 pipeNet.PumpingCapacitySum.ToString("0"),
                 pipeNet.GroundWaterCapacitySum.ToString("0"),
                 pipeNet.WaterCap.ToStringPercent("0.0"));
-            return string.Join(Environment.NewLine, atmosphericYield, totalWaterStorage, pipedPumpCapacity);
+                
+            return string.Join(Environment.NewLine, atmosphericYield, waterStorage, pipedPumpCapacity);
         }
         
         /// <summary>

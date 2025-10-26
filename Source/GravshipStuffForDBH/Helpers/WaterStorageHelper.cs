@@ -15,7 +15,7 @@ public static class WaterStorageHelper
             return props.WaterStorageCap;
         return float.NaN;
     }
-    
+
     /// <summary>
     /// Check if water storage is full
     /// </summary>
@@ -27,14 +27,5 @@ public static class WaterStorageHelper
             return storage.WaterStorage >= storage.GetWaterStorageCap();
     }
 
-    /// <summary>
-    /// Check if water storage is accepting
-    /// </summary>
-    public static bool IsAccepting(this CompWaterStorage storage)
-    {
-        if (storage is CompCompressedWaterStorage compCompressedWaterStorage)
-            return compCompressedWaterStorage.AmountCanAccept >= 0F;
-        else
-            return storage.WaterStorage < storage.GetWaterStorageCap();
-    }
+    
 }

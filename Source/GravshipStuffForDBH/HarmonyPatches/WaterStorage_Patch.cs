@@ -1,51 +1,41 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using DubsBadHygiene;
 using HarmonyLib;
 
 namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
 {
+    /// <summary>
+    /// Patches water storage to show proper inspect data and use the correct storage cap
+    /// </summary>
     [HarmonyPatchCategory("WaterStorage")]
     [HarmonyPatch]
     public class WaterStorage_Patch
     {
-        private static readonly Type WaterStorageType = typeof(CompWaterStorage);
-        private static readonly Type PlumbingNetType =typeof(PlumbingNet);
-        private static readonly MethodInfo HasFilterMethod = AccessTools.PropertyGetter(PlumbingNetType, nameof(PlumbingNet.HasFilter));
-        private static readonly CodeInstruction EnablesContaminationIncidentCall = CodeInstruction.Call(typeof(PlumbingNetHelper),
-            nameof(PlumbingNetHelper.IsTreated), [PlumbingNetType]);
+        private static readonly Assembly ThisAssembly = Assembly.GetExecutingAssembly();
         
-        static IEnumerable<MethodBase> TargetMethods()
-        {
-            var thisAssembly  = Assembly.GetExecutingAssembly();
-
-            foreach (var type in AccessTools.AllTypes())
-            {
-                if (type.Assembly == thisAssembly)
-                    continue;
-
-                if (!WaterStorageType.IsAssignableFrom(type)) 
-                    continue;
-                
-                foreach (var method in AccessTools.GetDeclaredMethods(type))
-                    yield return method;
-            }
-        }
+        private static float GetWaterStorageCap(CompWaterStorage storage) => storage is CompPoweredWaterStorage pws ?
+            pws.WaterStorageCap :
+            storage.Props.WaterStorageCap;
         
-        private static IEnumerable<CodeInstruction> Transpiler(
-            IEnumerable<CodeInstruction> instructions )
-        {
-            foreach (var instruction in instructions)
-            {
-                if (instruction.Calls(HasFilterMethod))
+        static IEnumerable<MethodBase> TargetMethods() => AccessTools.AllTypes()
+            .Where(t => t.Assembly != ThisAssembly)
+            .Where(t => typeof(CompWaterStorage).IsAssignableFrom(t))
+            .SelectMany(AccessTools.GetDeclaredMethods)
+            .Where(m => !m.IsStatic);
+
+        private static IEnumerable<CodeInstruction> Transpiler(MethodBase methodBase, 
+            IEnumerable<CodeInstruction> instructions ) =>
+            new CodeMatcher(instructions)
+                .MatchStartForward(CodeMatch.Calls(AccessTools.PropertyGetter(typeof(PlumbingNet), nameof(PlumbingNet.HasFilter))))
+                .Repeat(cm => cm.SetInstructionAndAdvance(CodeInstruction.Call(() => default(PlumbingNet).IsTreated())))
+                .MatchStartForward(CodeMatch.LoadsField(AccessTools.Field(typeof(CompProperties_WaterStorage), nameof(CompProperties_WaterStorage.WaterStorageCap))))
+                .Repeat(cm =>
                 {
-                    yield return EnablesContaminationIncidentCall;
-                    continue;
-                }
-                
-                yield return instruction;
-            }
-        }
+                    cm.SetInstructionAndAdvance(CodeInstruction.LoadArgument(0));
+                    cm.InsertAndAdvance(CodeInstruction.Call(typeof(WaterStorage_Patch), nameof(GetWaterStorageCap)));
+                })
+                .InstructionEnumeration();
     }
 }

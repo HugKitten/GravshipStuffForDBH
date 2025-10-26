@@ -28,7 +28,7 @@ namespace GravshipStuffForDubsBadHygiene
                 : Props.WaterStorageCapPowered;
 
         /// <summary>
-        /// Total amount of water that this tank can store
+        /// Total amount of water that this tank can store  
         /// </summary>
         public virtual float AmountCanAccept => this.WaterStorageCap - this.WaterStorage;
         
