@@ -1,66 +1,36 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Reflection.Emit;
 using DubsBadHygiene;
 using HarmonyLib;
-using UnityEngine;
+using Verse;
 
 namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
 {
     // Patches WaterPumpedPerTick calculating 
     [HarmonyPatchCategory("PlumbingNetPatch")]
-    [HarmonyPatch(typeof(PlumbingNet), "TickWater")]
-    public class PlumbingNet_Patch
+    public class PlumbingNet_TickWater_Patch
     {
-        private static void PostFix(PlumbingNet __instance)
-        {
-            var num1 = (float) __instance.WaterTowers.Count(WaterStorageHelper.IsAccepting);
-            var num2 = Mathf.Min(__instance.GroundWaterCapacitySum, __instance.PumpingCapacitySum);
-            if (num1 <= 0.0 || num2 <= 0.0)
-                return;
-            __instance.WaterPumpedPerTick = num2 / num1 / 60000f;
-        }
-        
-        // Too much of a headache ;-;
-        /*
-        private static readonly Type PlumbingNetType = typeof(PlumbingNet);
-        private static readonly Type WaterStorageHelperType = typeof(WaterStorageHelper);
-        private static readonly Type WaterStoragePropsType = typeof(CompProperties_WaterStorage);
-        private static readonly MethodInfo WaterStoragePropsMethod = AccessTools.Method(WaterStoragePropsType, nameof(CompWaterStorage.Props));
+        private static int CountAccepting(IEnumerable<CompWaterStorage> waterStorages,
+            Func<CompWaterStorage, bool> predicate) =>
+            waterStorages.Count(IsAccepting);
 
-        private static IEnumerable<CodeInstruction> Transpiler(
-            IEnumerable<CodeInstruction> instructions )
-        {
-            var codeMatcher = new CodeMatcher(instructions);
-            codeMatcher.MatchStartForward(CodeMatch.Calls(WaterStoragePropsMethod))
-                .RemoveInstruction()
-                .Insert(new CodeInstruction( OpCodes.Dup ));
+        private static bool IsAccepting(CompWaterStorage storage) =>
+            storage is CompPoweredWaterStorage pws 
+                ? pws.AmountCanAccept >= 0F
+                : storage.WaterStorage < storage.GetWaterStorageCap();
 
-            codeMatcher.MatchEndForward(CodeMatch.LoadsField(AccessTools.Field(WaterStoragePropsType,
-                    nameof(CompProperties_WaterStorage.WaterStorageCap))))
-                .RemoveInstruction()
-                .Insert(CodeInstruction.Call(WaterStorageHelperType, nameof(WaterStorageHelper.GetWaterStorageCap)));
-            
-            codeMatcher.MatchEndForward(CodeMatch.LoadsField(AccessTools.Field(WaterStoragePropsType,
-                    nameof(CompProperties_WaterStorage.AutoGenRate))))
-                .RemoveInstruction()
-                .Insert(CodeInstruction.Call(WaterStorageHelperType, nameof(WaterStorageHelper.GetAutoGenRate)));
-            
-            codeMatcher.MatchEndForward(CodeMatch.LoadsField(AccessTools.Field(WaterStoragePropsType,
-                    nameof(CompProperties_WaterStorage.Tickrate))))
-                .RemoveInstruction()
-                .Insert(CodeInstruction.Call(WaterStorageHelperType, nameof(WaterStorageHelper.GetTickRate)));
-            
-            codeMatcher.MatchEndForward(CodeMatch.LoadsField(AccessTools.Field(WaterStoragePropsType,
-                    nameof(CompProperties_WaterStorage.AutoGenRate))))
-                .RemoveInstruction()
-                .Insert(CodeInstruction.Call(WaterStorageHelperType, nameof(WaterStorageHelper.GetAutoGenRate)));
-            
-            codeMatcher.MatchEndForward(CodeMatch.LoadsField(AccessTools.Field(WaterStoragePropsType,
-                    nameof(CompProperties_WaterStorage.AutoOnRain))))
-                .RemoveInstruction()
-                .Insert(CodeInstruction.Call(WaterStorageHelperType, nameof(WaterStorageHelper.GetAutoOnRain)));
+        private static IEnumerable<MethodBase> TargetMethods() =>
+            [AccessTools.Method(typeof(PlumbingNet), "TickWater")];
 
-            return codeMatcher.Instructions();
-        }
-        */
+        private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions) =>
+            new CodeMatcher(instructions)
+                .MatchStartForward(CodeMatch.Calls(() => GenCollection.Count(null, (Predicate<CompWaterStorage>)null)))
+                .ThrowIfInvalid("Could not patch IncidentWorker_TowerContamination.TickWater")
+                .SetOperandAndAdvance(
+                    AccessTools.Method(typeof(PlumbingNet_TickWater_Patch), nameof(CountAccepting))
+                ).InstructionEnumeration();
     }
 }

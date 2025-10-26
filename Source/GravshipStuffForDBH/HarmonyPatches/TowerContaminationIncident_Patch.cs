@@ -1,39 +1,38 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
+using System.Reflection.Emit;
 using DubsBadHygiene;
 using HarmonyLib;
 
 namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
 {
+    /// <summary>
+    /// Patch to prevent contamination incident on pipetnets with only treated water source
+    /// </summary>
     [HarmonyPatchCategory("TowerContaminationIncident")]
-    [HarmonyPatch]
     public static class TowerContaminationIncidentPatch
     {
-        private static readonly Type TowerContaminationIncidentType =
-            AccessTools.TypeByName("DubsBadHygiene.IncidentWorker_TowerContamination");
+        private static IEnumerable<PlumbingNet> WhereTreated(this IEnumerable<PlumbingNet> source,
+            Func<PlumbingNet, bool> predicate) =>
+            source.Where(predicate).Where(EnablesContaminationIncident);
 
-        private static readonly Type PlumbingNetType = typeof(PlumbingNet);
-        private static readonly MethodInfo HasFilterMethod = AccessTools.PropertyGetter(PlumbingNetType, nameof(PlumbingNet.HasFilter));
-        private static readonly CodeInstruction EnablesContaminationIncidentCall = CodeInstruction.Call(typeof(PlumbingNetHelper),
-            nameof(PlumbingNetHelper.EnablesContaminationIncident), [PlumbingNetType]);
+        private static bool EnablesContaminationIncident(PlumbingNet plumbingNet) =>
+            !plumbingNet.WaterWells.All(w => w is CompTreatedWaterInlet { EnablesContaminationIncident: false });
 
-        private static IEnumerable<MethodBase> TargetMethods() => 
-            AccessTools.GetDeclaredMethods(TowerContaminationIncidentType);
+        private static IEnumerable<MethodBase> TargetMethods() =>
+        [
+            AccessTools.Method(AccessTools.TypeByName("DubsBadHygiene.IncidentWorker_TowerContamination"), "pango")
+        ];
 
-        private static IEnumerable<CodeInstruction> Transpiler(
-            IEnumerable<CodeInstruction> instructions )
-        {
-            foreach (var instruction in instructions)
-            {
-                if (instruction.Calls(HasFilterMethod))
-                {
-                    yield return EnablesContaminationIncidentCall;
-                    continue;
-                }
-                
-                yield return instruction;
-            }
-        }
+        private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions) =>
+            new CodeMatcher(instructions)
+                .MatchStartForward(CodeMatch.Calls(() => Enumerable.Where(null, (Func<PlumbingNet, bool>)null)))
+                .ThrowIfInvalid("Could not patch IncidentWorker_TowerContamination.pango")
+                // only change the operand (the MethodInfo) — keep opcode and labels intact
+                .SetOperandAndAdvance(
+                    AccessTools.Method(typeof(TowerContaminationIncidentPatch), nameof(WhereTreated))
+                ).InstructionEnumeration();
     }
 }
