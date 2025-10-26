@@ -29,10 +29,11 @@ namespace GravshipStuffForDubsBadHygiene
         public override void CompTick()
         {
             base.CompTick();
-            if (this.parent.IsHashIntervalTick(250))
-                UpdatePowerOutput();
-            if (this.parent.IsHashIntervalTick(250))
-                UpdateCap();
+            if (!this.parent.IsHashIntervalTick(250)) 
+                return;
+            
+            UpdatePowerOutput();
+            UpdateCap();
         }
 
         /// <summary>
@@ -83,7 +84,7 @@ namespace GravshipStuffForDubsBadHygiene
             var powerComp = this.PowerComp;
             if (powerComp == null)
                 return;
-            powerComp.PowerOutput = -_settings.tankPowerConsumption;
+            powerComp.PowerOutput = -_settings.atmosphericPowerConsumption;
         }
     }
 }
