@@ -28,8 +28,8 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_AtmosphericInlet"/>
-            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_WaterInletPumpingStation"/>
+            <li Class="DBHOdysseyGravshipAddon.CompProperties_AtmosphericInlet"/>
+            <li Class="DBHOdysseyGravshipAddon.CompProperties_WaterInletPumpingStation"/>
         </comps>
         <researchPrerequisites>
             <li>AtmosphericWaterGeneration</li>
@@ -60,7 +60,7 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-            <li Class="GravshipStuffForDubsBadHygiene.CompProperties_CompressedWaterStorage"/>
+            <li Class="DBHOdysseyGravshipAddon.CompProperties_CompressedWaterStorage"/>
         </comps>
         <rotatable>true</rotatable>
         <defaultPlacingRot>South</defaultPlacingRot>
