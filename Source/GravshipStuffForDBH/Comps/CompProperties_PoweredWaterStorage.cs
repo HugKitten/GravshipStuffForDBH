@@ -5,8 +5,8 @@ namespace GravshipStuffForDubsBadHygiene;
 
 public class CompProperties_PoweredWaterStorage : CompProperties_WaterStorage
 {
-    public float WaterStorageCapPowered { get; set; }
-    public float WaterStorageCapUnpowered { get; set; }
+    public float WaterStorageCapPowered;
+    public float WaterStorageCapUnpowered;
         
     public CompProperties_PoweredWaterStorage()
     {
