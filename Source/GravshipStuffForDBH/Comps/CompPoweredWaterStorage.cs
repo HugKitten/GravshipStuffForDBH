@@ -17,7 +17,7 @@ namespace GravshipStuffForDubsBadHygiene
     /// </summary>
     public class CompPoweredWaterStorage : CompWaterStorage
     {
-        public new CompProperties_PoweredWaterStorage Props => (CompProperties_PoweredWaterStorage) this.props ?? throw new InvalidOperationException("Props not set");
+        public new CompProperties_PoweredWaterStorage Props => (CompProperties_PoweredWaterStorage)this.props;
         
         /// <summary>
         /// Cap on amount of water that can be stored

@@ -30,7 +30,6 @@ namespace GravshipStuffForDubsBadHygiene.HarmonyPatches
             new CodeMatcher(instructions)
                 .MatchStartForward(CodeMatch.Calls(() => Enumerable.Where(null, (Func<PlumbingNet, bool>)null)))
                 .ThrowIfInvalid("Could not patch IncidentWorker_TowerContamination.pango")
-                // only change the operand (the MethodInfo) — keep opcode and labels intact
                 .SetOperandAndAdvance(
                     AccessTools.Method(typeof(TowerContaminationIncidentPatch), nameof(WhereTreated))
                 ).InstructionEnumeration();
