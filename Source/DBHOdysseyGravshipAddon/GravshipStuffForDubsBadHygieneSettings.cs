@@ -10,8 +10,8 @@ namespace DBHOdysseyGravshipAddon
         public float atmosphericYieldUnpowered = 0F;
         public float atmosphericPowerConsumption = 500F;
 
-        public float tankStorageCapPowered = 4_000F;
-        public float tankStorageCapUnpowered = 12_000F;
+        public float tankStorageCapPowered = 12_000F;
+        public float tankStorageCapUnpowered = 4_000F;
         public float tankPowerConsumption = 200F;
 
         public bool patchContaminationEvent = true;
@@ -41,8 +41,8 @@ namespace DBHOdysseyGravshipAddon
             this.atmosphericYieldPowered = 600F;
             this.atmosphericYieldUnpowered = 0F;
             this.atmosphericPowerConsumption = 500F;
-            this.tankStorageCapPowered = 4000;
-            this.tankStorageCapUnpowered = 12000;
+            this.tankStorageCapPowered = 12000;
+            this.tankStorageCapUnpowered = 4000;
             this.tankPowerConsumption = 200F;
             this.patchContaminationEvent = true; 
             this.patchWaterTowers = true;
